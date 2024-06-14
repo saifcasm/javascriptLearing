@@ -25,3 +25,24 @@ const muFunction = function(){
 
 //typeof of null is object
 //typeof function is function(also called object function)
+
+
+// ******************************************
+// Stack(Primitive), Heap(Non-Primitive)
+// While using stack, it gives us copy and
+// while using heap it gives us reference of original where if we change any value it will change in original
+
+let userOne = {
+    email: "user1@gmail.com"
+}
+
+let userTwo = userOne;
+
+console.log(userOne);
+console.log(userTwo);
+
+userTwo.email = 'saifa1209@gmail.com'
+console.log('after changing');
+
+console.log(userOne);
+console.log(userTwo);
